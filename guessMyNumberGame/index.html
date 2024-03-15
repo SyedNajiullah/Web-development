@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <title>Guess-My-number</title>
+  </head>
+  <body>
+    <header class="nav-bar">
+      <button class="play-again">Play Again</button>
+      <p class="range">( Between 1 and 50 )</p>
+    </header>
+
+    <h1 class="main-heading">Guess Computer's Number</h1>
+
+    <h1 class="computer-number">?</h1>
+
+    <h2 class="current-state">Start guessing...</h2>
+
+    <div class="grid-display">
+      <div>
+        <h2>Enter your guess here</h2>
+        <input type="number" class="input-number" placeholder="GUESS" />
+        <button class="guess">Guess</button>
+      </div>
+      <div class="results">
+        <h2 class="current-score">💯 Current Score : 20</h2>
+        <h2 class="heighest-score">🏆 Heighest Score : 0</h2>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
