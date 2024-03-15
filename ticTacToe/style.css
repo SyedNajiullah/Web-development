@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.6),
+      rgba(34, 34, 34, 0.6)
+    ),
+    url(image/back-image.jpg);
+  background-size: cover;
+}
+
+.main-heading {
+  margin: 1rem;
+  text-align: center;
+  color: #fff;
+}
+
+.symbols {
+  margin: 0 4rem;
+  padding: 1rem;
+  color: #fff;
+}
+
+.container {
+  margin: 2rem;
+  padding: 2rem;
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  color: #fff;
+  padding: 1.5rem;
+  gap: 0.7rem;
+  border-radius: 0.2rem;
+  border: 2px solid #000;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 1rem 4rem;
+  border: none;
+  border-radius: 0.5rem;
+  color: #fa5252;
+  font-size: 3rem;
+}
+
+.btn:hover,
+.btn:active {
+  font-weight: bold;
+  transform: scale(1.05, 1.05);
+}
+
+.player-turn {
+  color: #fff;
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.selected {
+  background-color: #fa5252;
+  color: #000;
+  font-weight: bold;
+}
+
+.selected:hover,
+.selected:active {
+  font-weight: bold;
+  transform: scale(1.05, 1.05);
+}
+
+.winner {
+  background-color: #000;
+  color: #fa5252;
+  padding: 1rem;
+  border-radius: 1.5rem;
+}
