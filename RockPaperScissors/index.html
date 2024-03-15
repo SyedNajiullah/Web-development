@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <title>Rock-Paper-Scissors</title>
+  </head>
+  <body>
+    <h1>Rock-Paper-Scissors-Game</h1>
+    <h4>Rules Of The Game</h4>
+    <marquee class="rules">
+      🤍 User has to either select rock paper or scissors by pressing the
+      buttons. Then computer will choose randomly between rock, paper and
+      scissors. User will select by clicking the icon. Battle between rock and
+      paper, paper wins. Battle between rock and scissors, rock win. Battle
+      between paper and scissors, scissors win. There are no other
+      possibilities. user will choose first and then the computer. Have fun 🤍
+    </marquee>
+    <h4>: Choose one :</h4>
+    <div class="game-options">
+      <div class="rock">
+        <h4>Rock</h4>
+        <button onclick="getComputerInput('rock')">👊</button>
+      </div>
+      <div class="paper">
+        <h4>Paper</h4>
+        <button onclick="getComputerInput('paper')">✋</button>
+      </div>
+      <div class="scissors">
+        <h4>scissors</h4>
+        <button onclick="getComputerInput('scissors')">✌</button>
+      </div>
+    </div>
+    <h4>: Computer chose :</h4>
+    <div class="display">
+      <div id="computer-input-display"></div>
+      <div id="display-area"></div>
+      <div id="computer-score"></div>
+    </div>
+    <button onclick="resetScores()" class="reset-scores">Reset Scores</button>
+    <script src="script.js"></script>
+  </body>
+</html>
